@@ -4,6 +4,7 @@ namespace DynamicDbServer.src.Features.DynamicDbBase.Controllers;
 
 [ApiController]
 [Route("dynamicdb/objects")]
-public class DynamicDbController{
+public class DynamicDbController
+{
 
 }

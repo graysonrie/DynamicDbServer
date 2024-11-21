@@ -28,6 +28,7 @@ public class DynamicDbService(AppDbContext db) : IDynamicDbService
         {
             obj.Data = newProperties;
             await _db.SaveChangesAsync();
+            return;
         }
         Log.Warning($"UpdateJsonDataAsync: The following ID does not exist in the DB: {objId}");
     }
